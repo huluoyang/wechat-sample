@@ -14,3 +14,4 @@ See it in action here: [meteoric.github.io](http://meteoric.github.io)
 
 ## License
 [MIT License](https://github.com/meteoric/demo/blob/master/LICENSE)
+# wechat-sample
