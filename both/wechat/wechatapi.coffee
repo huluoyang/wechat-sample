@@ -8,9 +8,9 @@ Router.route '/wechat/callback/verifyhost', (->
 	timestamp = @params.query.timestamp
 	nonce = @params.query.nonce
 	token = @params.query.token
-	token = 'wangzengzhou1234567890'
+	#token = 'wangzengzhou1234567890'
 	
-	tmpStr = [token, timestamp, nonce].sort().join()
+	tmpStr = [token, timestamp, nonce].sort().join('')
 	console.log 'tmpStr1:' + tmpStr
 
 	tmpStr = CryptoJS.SHA1(tmpStr).toString()
