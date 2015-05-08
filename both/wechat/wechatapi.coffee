@@ -9,7 +9,8 @@ Router.route '/wechat/callback/verifyhost', (->
 	nonce = @params.query.nonce
 	token = @params.query.token
 	#token = 'wangzengzhou1234567890'
-	
+	echostr = @params.query.echostr
+
 	tmpStr = [token, timestamp, nonce].sort().join('')
 	console.log 'tmpStr1:' + tmpStr
 
@@ -20,8 +21,10 @@ Router.route '/wechat/callback/verifyhost', (->
 	console.log 'nonce:'+ nonce
 	console.log 'token:'+ token
 	console.log 'tmpStr:' + tmpStr
+	console.log 'echostr:'+ echostr
 
-	resultStr = if signature == tmpStr then 'true' else 'false'
+	resultStr = if signature == tmpStr then echostr else ''
+	console.log 'resultStr:' + resultStr
 	res.end resultStr
 
 	return
