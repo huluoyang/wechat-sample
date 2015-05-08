@@ -1,8 +1,8 @@
 ![](http://f.cl.ly/items/391y4708420P0H001k1G/meteoric.png)
 
-# Meteor Ionic Demo
+# Meteor wechat Demo
 
-This is a demo of the various [Meteoric](https://github.com/meteoric) packages:
+This is a demo of the various [Wechat](https://mp.weixin.qq.com/) packages:
 
 - [meteoric:ionic](https://github.com/meteoric/meteor-ionic)
 - [meteoric:ionic-sass](https://github.com/meteoric/ionic-sass)
