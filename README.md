@@ -11,6 +11,24 @@ This is a demo of the various [Wechat](https://mp.weixin.qq.com/) packages:
 
     PS:token应该在verifyhost中写死，而不是在URL中传过去，为了方便使用，从URL中的token参数中取的。
 
+
+###[获取token](https://github.com/jzwzz/wechat-sample/blob/master/both/wechat/wechatapi_token.coffee)
+
+	调用url /wechat/api/token?appid=<your app id>&secret=<your secret id>
+
+	返回值：取data.access_token的值获得access_token的值获得
+
+
+
+###[获取微信服务器IP](https://github.com/jzwzz/wechat-sample/blob/master/both/wechat/wechatapi_token.coffee)
+
+	调用url /wechat/api/wechatapi_getcallbackip?access_token=<获取token方法获取的access_token>
+
+	返回值：取data.access_token的值获得access_token的值获得
+
+
+
+
 See it in action here: [wechat-sample.meteor.com](http://wechat-sample.meteor.com)
 
 ## License
