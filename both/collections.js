@@ -21,5 +21,11 @@ Posts.attachSchema(new SimpleSchema({
     autoform: {
       type: 'toggle'
     }
-  }
+  },authorId: {
+    type: String,
+    max: 200,
+      autoform: {
+        'label-type': 'stacked'
+      }
+    }
 }));
