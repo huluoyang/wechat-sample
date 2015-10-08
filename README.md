@@ -34,3 +34,8 @@ See it in action here: [wechat-sample.meteor.com](http://wechat-sample.meteor.co
 ## License
 [MIT License](https://github.com/meteoric/demo/blob/master/LICENSE)
 # wechat-sample
+
+
+RoadMap
+1. add wechat pay
+2. add user logon integration
